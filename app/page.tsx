@@ -6,17 +6,11 @@ export default function Page() {
     <main className="store">
       <h1>My Product Store</h1>
 
-      {/* TODO: once Greeting takes a `name` prop, pass one here:
-          <Greeting name="Shopper" /> */}
-      <Greeting />
+      <Greeting name="User" />
 
       <div className="cards">
-        {/* TODO: reuse ProductCard at least TWICE with DIFFERENT data.
-            Remember: numbers and booleans are passed in braces.
-            <ProductCard title="Keyboard" price={49} inStock={true} />
-            <ProductCard title="Mouse"    price={25} inStock={false} /> */}
-        <ProductCard />
-        <ProductCard />
+        <ProductCard title="Mechanical Keyboard" price={49} inStock={true} />
+        <ProductCard title="Wireless Mouse" price={25} inStock={false} />
       </div>
     </main>
   );
